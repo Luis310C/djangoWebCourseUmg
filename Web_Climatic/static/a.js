@@ -1,0 +1,1 @@
+MoatHandleJsonpResponse_79168913({"c": ["moat_safe", "gs_news_and_weather"], "ct": 1, "g": 0, "d": 5, "r": 4578632310, "pcode": "ipgnestlelatamdcmbs85035053152", "z": 4, "b": true, "h": performance.now()})

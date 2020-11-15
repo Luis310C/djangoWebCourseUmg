@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %} {{object.titulo}}{%endblock%}
+
+{%block titulo%}<h1>{{object.titulo}}</h1> {%endblock%}
+
+{%block content%}{{object.contenido|safe }}{%endblock%}
+

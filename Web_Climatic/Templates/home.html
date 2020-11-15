@@ -1,0 +1,114 @@
+
+{% extends "base.html" %}
+{% block title %}Cambio Climatico{%endblock%}
+
+
+{%block slid%}
+<style>
+
+.carousel {
+  background:#007aeb;
+}
+
+
+.carousel-item .img-fluid {
+  width:100%;
+}
+
+
+.carousel-item a {
+  display: block;
+  width:100%;
+}
+
+
+
+</style>
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+      <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+              <a href="https://bootstrapcreative.com/">
+                
+                   <picture>
+                    <source srcset="/static/images/esmog.jpg" media="(min-width: 1400px)">
+                    <source srcset="/static/images/esmog.jpg" media="(min-width: 769px)">
+                     <source srcset="/static/images/esmog.jpg" media="(min-width: 577px)">
+                    <img srcset="/static/images/esmog.jpg" alt="responsive image" class="d-block img-fluid">
+                  </picture>
+                
+                  <div class="carousel-caption">
+                      <div>
+                          <h2>El problema del Esmog</h2>
+                       
+                          <span class="btn btn-sm btn-secondary">leer</span>
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <div class="carousel-item">
+              <a href="https://bootstrapcreative.com/">
+                   <picture>
+                    <source srcset="/static/images/selva.png" media="(min-width: 1400px)">
+                    <source srcset="/static/images/selva.png" media="(min-width: 769px)">
+                     <source srcset="/static/images/selva.png" media="(min-width: 577px)">
+                    <img srcset="/static/images/selva.png" alt="responsive image" class="d-block img-fluid">
+                  </picture>
+
+                  <div class="carousel-caption justify-content-center align-items-center">
+                      <div>
+                          <h2>Deforestacion</h2>
+                          
+                          <span class="btn btn-sm btn-secondary ">Leer</span>
+                      </div>
+                  </div>
+              </a>
+          </div>
+          <!-- /.carousel-item -->
+          <div class="carousel-item">
+              <a href="https://bootstrapcreative.com/">
+                   <picture>
+                    <source srcset="/static/images/header_CR-1400x500.jpg" media="(min-width: 1400px)">
+                    <source srcset="/static/images/header_CR-1400x500.jpg" media="(min-width: 769px)">
+                     <source srcset="/static/images/header_CR-1400x500.jpg media="(min-width: 577px)">
+                    <img src="/static/images/header_CR-1400x500.jpg" alt="responsive image" class="d-block img-fluid">
+                  </picture>
+
+                  <div class="carousel-caption align-items-start text-dark">
+                      <div>
+                          <h2>Glaciares Groenlandia</h2>
+                          
+                          <span class="btn btn-sm btn-secondary">Leer mas</span>
+                      </div>
+                  </div>
+              </a>
+          </div>
+       
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+  </div>
+
+
+
+<div class="container-fluid text-center">
+    <p>Cada día, en diferentes puntos de la geografía mundial, el planeta nos manda mensajes sobre las enormes transformaciones que está sufriendo: desde cambiantes pautas meteorológicas que amenazan la producción de alimentos; hasta el aumento del nivel del mar que incrementa el riesgo de inundaciones catastróficas.</p>
+</div>
+ {%endblock%}
+ {% block content %}
+ {%include "p.html" %}
+ {% endblock %}
+ {%block pie%}
+ {%include "footer.html"%}
+ {%endblock%}
+

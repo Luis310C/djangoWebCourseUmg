@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} Publicaciones {%endblock%}
+{% block content %}
+
+ <h1>Contenido</h1>
+
+    {%for articulo in object_list%}
+  <h3><li><a href="{% url 'article-details' articulo.url%}">{{articulo.titulo}}</a></li></h3>
+  
+    <h4>{{articulo.descripcion|safe}}</h4>
+    
+    <a href="{% url 'article-details' articulo.url%}" class="btn btn-primary btn-sm active">Leer Mas</a>
+
+    {%endfor%}
+
+{% endblock %}

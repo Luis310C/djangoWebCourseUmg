@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %} Nuevo Post {%endblock%}
+{%block content%}
+<h1>Nuevo Articulo</h1>
+<br></br>
+<div class="form-group">
+<form action="" method="post" enctype="multipart/form-data">
+    {% load widget_tweaks%}
+    {%csrf_token%}
+    {{form.as_p}}
+    
+    {{ form.media }}
+ 
+<input class="btn btn-secondary" type="submit" value="Guardar"> 
+</form>
+</div>
+{%endblock%}
